@@ -1,0 +1,11 @@
+
+
+
+<form class="animate__animated animate__bounce" (ngSubmit)="buscar()" autocomplete="off" action="">
+    <input  class="form-control" 
+            type="text" 
+            name="termino" 
+            [(ngModel)]="termino"
+            (input)="teclaPrecionada( $event )"
+            [placeholder]="placeholder">
+</form>
